@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/pequena.png" type="image/png">
+        
+        <source media="(max-width: 1050px)" srcset="Imagens/media.png" type="image/png">
+        
+        <img src="Imagens/grande.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="media/audio1.mp3" type="audio/mpeg">
+        <source src="media/audio1.mp3" type="audio/ogg">
+        <source src="media/audio1.mp3" type="audio/wav">
+        <p>infelizmente o seu navegador não consegue reproduzir áudio. <a href="media/audio1.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
+
+<!-- Nesta aula aprendemos a usar a tag, source, que usamos para varias coisas, a tag da funcionalidade para diferentes coisas que quisermos usar, nesta aula aprendemos sobre imagens e sobre audio ate agora, e para usar temos que usar diferentes sources, por exemplo, para as imagens usamos os sources de media, e para os sources de audio, usamos o source de src e type -->
